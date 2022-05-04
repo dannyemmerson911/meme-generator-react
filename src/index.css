@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  font-family: "Fredoka One", cursive;
+  font-weight: lighter;
+  letter-spacing: 4px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px; 
+  background: linear-gradient(90deg, #38A22F 1.18%, #2D8B25 22.98%, #72C86C 52.32%, #335F3F 100%);  color: white;
+  padding: 10px;
+  margin-bottom: -15px 
+}
+
+.title {
+  font-size: 1rem;
+  letter-spacing: .45rem;
+  margin-right: auto;
+}
+
+.courseProject {
+  font-family: "Amaranth", sans-serif;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  letter-spacing: .45rem;
+}
+
+.trollface {
+  max-height: 50px;
+  max-width: 50px;
+  margin-right: 6px;
+}
+
+main {
+  margin: auto;
+  padding: 35px;
+  width: 800px;
+  height: auto;
+}
+
+.form {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  
+}
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+.formButton {
+  border-radius: 5px;
+  width: 79%;
+  height: 40px;
+  background: linear-gradient(90deg, #38A22F 1.18%, #2D8B25 22.98%);  color: white;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+input {
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-right: 5px;
+  border: 1px solid #D5D4D8;
+  height: 30px;
+  text-indent: 5px;  
+  text-transform: lowercase;
+}
+
+.memeImg {
+  max-width: 75%;
+  border-radius: 5px;
+  border: 1px solid rgb(12, 68, 12);
+  box-shadow: 1px 2px 1px 2px #041602;
+}
+
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
